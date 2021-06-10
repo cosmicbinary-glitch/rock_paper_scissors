@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Knight. Mage. Thief.</title>
+        <link rel="stylesheet" href="RPS.css">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Crushed">
+    </head>
+    <body>
+        <nav id="navbar">
+            <div class="left-links">
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+            <div class="right-links">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </nav>
+        <div class="pimg1">
+            <div class="anim">
+                <button class="button" id="reset-button" onClick="window.location.reload();">reset</button>
+                <div id="buttons" class="fighters">
+                    
+                    <img src="images/fknight.png" id="rock" onClick="reply_click()" class="fknight" alt="rock">
+
+                    <img src="images/fwizard.png" id="paper" onClick="reply_click()" class="fwizard" alt="paper">
+
+                    <img src="images/fthief.png" id="scissors" onClick="reply_click()" class="fthief" alt="scissors">
+                </div>
+            </div>
+            <div class="ptext">
+                <p>
+                    choose ur fighter
+                </p>
+                <span id="results" class="border">
+                    knight. mage. thief.
+                </span>
+            </div>
+            <div class="score-container">
+                <p id="player-score" class="player">you: 0</p>
+                <p id="computer-score" class="computer">com: 0</p>
+
+                <p class="score-heading" id="score-heading">what fate lies in store for you?</p>
+            </div>
+        </div>
+        <section class="section-light">
+           <p id="flavor-text" class="flavor-text">
+                this is a thematic reimagining of the classic "rock, paper, scissors" game using jobs from the final fantasy series (and maybe a reference or two to some other games). click one of the floating icons to start the game. it's you vs. the computer, and the first to five points will be declared the winner!
+                
+                the sprites were ripped by BlueMario and the featured art in the background was drawn by scott uminga. check out their work if you get the chance!
+            </p>
+            <footer class="footer">
+                <p class="watermark">+ cosmicBinary-glitch@git +</p>
+            </footer>
+        </section>
+    <script src="RPS_script.js"></script>   
+    </body>
+</html>
